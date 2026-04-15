@@ -1,0 +1,27 @@
+# Task Checklist
+
+- [ ] Initialize Project
+  - [ ] Run Vite React+TypeScript setup
+  - [ ] Install Tailwind CSS, Framer Motion, standard icons (lucide-react), etc.
+- [ ] Configure Theme and Global Styles
+  - [ ] Set up Tailwind config for dark mode, custom colors (neon blue, deep navy, purple glow)
+  - [ ] Add global CSS for smooth scroll, scrollbars, and glassmorphism utilities
+- [ ] Implement Core Components
+  - [ ] Animated Matrix Rain background component
+  - [ ] Floating Navbar/Navigation
+  - [ ] Page Layout wrapper
+- [ ] Implement Sections
+  - [ ] Hero Section (Animated typing, Matrix background, CTAs)
+  - [ ] About Section (Glassmorphism cards, profile info)
+  - [ ] Experience & Leadership Section (Vertical timeline UI)
+  - [ ] Education Section (Timeline/Cards)
+  - [ ] Certifications Section (Grid with glow hover effects)
+  - [ ] Projects Section (Cards with descriptions and hover expand)
+  - [ ] Research & Publications Section (Scrollable list / Animated cards)
+  - [ ] Industry & Global Exposure Section (World map / Animated cards)
+  - [ ] Speaking & Mentorship Section
+  - [ ] Contact Section (Futuristic minimal form, Social links)
+- [ ] Final Assembly & Polish
+  - [ ] Combine sections into main App layout
+  - [ ] Verify responsiveness and cross-device functionality
+  - [ ] Final animation tuning (scroll triggers, hover effects)
