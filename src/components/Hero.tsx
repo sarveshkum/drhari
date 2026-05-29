@@ -39,13 +39,13 @@ export const Hero = () => {
             <span className="mr-3 text-black">&gt;</span>
             <TypeAnimation
               sequence={[
-                'CISO Certified',
+                'Cybersecurity Professional',
                 2000,
-                'Research Leader',
+                'Security Operations Enthusiast',
                 2000,
-                'Founder of Zyphron Technologies ',
+                'Founder, Zyphron Technologies',
                 2000,
-                'Cyber Security Architect',
+                'IT & Network Operations Lead',
                 2000,
 
               ]}
@@ -62,7 +62,7 @@ export const Hero = () => {
             transition={{ duration: 0.5, delay: 0.3 }}
             className="text-lg md:text-xl text-slate-600 max-w-2xl leading-relaxed border-l-2 border-purple-glow pl-4"
           >
-            18+ Years in Cyber Security, Wireless Networks & Advanced Research. Securing the Future with Intelligence & Innovation.
+            18+ years across cybersecurity, network operations, digital infrastructure, and enterprise security initiatives with a hands-on passion for resilient, business-ready technology.
           </motion.p>
 
           <motion.div
@@ -75,7 +75,7 @@ export const Hero = () => {
               href="#research"
               className="flex items-center gap-2 px-8 py-4 bg-neon-blue/10 border border-neon-blue text-neon-blue font-semibold rounded hover:bg-neon-blue/20 hover:shadow-[0_0_15px_rgba(37,99,235,0.4)] transition-all group"
             >
-              View Research
+              View Portfolio
               <ChevronRight className="group-hover:translate-x-1 transition-transform" size={20} />
             </a>
             <a

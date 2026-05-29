@@ -5,19 +5,19 @@ const exposures = [
   {
     title: "Israel Cybersecurity Training",
     location: "Ariel University, Israel",
-    description: "Completed exclusive hands-on training focused on Cyber Range-based simulation environments in 2021. Collaborative research and engagements currently in progress.",
+    description: "Completed exclusive hands-on training in Cyber Range-based simulation environments, strengthening practical incident response and enterprise security readiness.",
     icon: <Globe size={32} className="text-neon-blue" />
   },
   {
-    title: "International Outreach",
+    title: "International Partnerships",
     location: "Swinburne University & APU, Malaysia",
-    description: "Engaged in academic collaboration facilitating joint research, faculty exchange, and exploring cross-border academic initiatives.",
+    description: "Built cross-border partnerships focused on cybersecurity knowledge exchange, applied programs, professional training, and collaborative technology initiatives.",
     icon: <Plane size={32} className="text-matrix-green" />
   },
   {
     title: "Collaborative R&D",
     location: "CDAC-Chennai",
-    description: "Strategic collaboration on research and consultancy, contributing to workforce training, online assessments, and generating Rs. 30 Lakhs deployment.",
+    description: "Drove strategic collaboration on cybersecurity consulting, workforce training, online assessment systems, and Rs. 30 Lakhs technology deployment.",
     icon: <ShieldAlert size={32} className="text-purple-glow" />
   },
   {

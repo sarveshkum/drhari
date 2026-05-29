@@ -13,7 +13,7 @@ export const Mentorship = () => {
           className="mb-16 text-center"
         >
           <h2 className="text-3xl md:text-5xl font-bold text-slate-900 mb-4">
-            Speaking & <span className="text-matrix-green glow-text">Mentorship</span>
+            Advisory & <span className="text-matrix-green glow-text">Mentorship</span>
           </h2>
           <div className="h-[2px] w-24 bg-matrix-green mx-auto mt-6"></div>
         </motion.div>
@@ -29,9 +29,9 @@ export const Mentorship = () => {
             <div className="flex gap-4 items-start bg-black/5 p-6 rounded-xl border border-black/5 hover:border-matrix-green/30 transition-colors">
               <Mic className="text-matrix-green shrink-0 mt-1" size={28} />
               <div>
-                <h3 className="text-xl font-bold text-slate-900 mb-2">Expert Speaker & Trainer</h3>
+                <h3 className="text-xl font-bold text-slate-900 mb-2">Executive Speaker & Trainer</h3>
                 <p className="text-slate-600 text-sm leading-relaxed mb-3">
-                  Delivered keynote sessions at the 9th Global Education Summit at IIC Delhi, and Hackers Community Coimbatore. 
+                  Delivered keynote and expert sessions for leadership forums, cybersecurity communities, and professional training programs. 
                 </p>
                 <div className="flex flex-wrap gap-2 text-xs font-mono text-neon-blue/80">
                   <span className="bg-black/5 px-2 py-1 rounded">VIT</span>
@@ -46,7 +46,7 @@ export const Mentorship = () => {
               <div>
                 <h3 className="text-xl font-bold text-slate-900 mb-2">TNStartup Mentor</h3>
                 <p className="text-slate-600 text-sm leading-relaxed">
-                  Recognized as a Mentor under the TNStartup Initiative, providing strategic mentorship to early-stage startups in cybersecurity through technical guidance and product development support.
+                  Recognized as a Mentor under the TNStartup Initiative, advising early-stage cybersecurity startups on product strategy, technical direction, execution, and market readiness.
                 </p>
               </div>
             </div>
@@ -63,7 +63,7 @@ export const Mentorship = () => {
               <div className="text-4xl font-bold text-slate-900 mb-2 flex items-center justify-center">
                 10<span className="text-matrix-green">+</span>
               </div>
-              <p className="text-sm font-mono text-slate-500 uppercase tracking-wider">Tech Talks & Keynotes</p>
+              <p className="text-sm font-mono text-slate-500 uppercase tracking-wider">Executive Talks & Keynotes</p>
             </div>
             
             <div className="glass-panel p-6 rounded-xl text-center border-l-2 border-purple-glow flex flex-col justify-center min-h-[160px] col-span-2">
@@ -71,7 +71,7 @@ export const Mentorship = () => {
               <div className="text-4xl font-bold text-slate-900 mb-2 flex items-center justify-center">
                 5<span className="text-purple-glow">+</span> Years
               </div>
-              <p className="text-sm font-mono text-slate-500 uppercase tracking-wider">Hackathon Mentorship</p>
+              <p className="text-sm font-mono text-slate-500 uppercase tracking-wider">Innovation Mentorship</p>
             </div>
           </motion.div>
         </div>

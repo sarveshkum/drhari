@@ -3,42 +3,42 @@ import { Briefcase, Network, Lightbulb, Users, Award, Shield } from 'lucide-reac
 
 const experiences = [
   {
-    role: "Head of IT & Network Operations",
+    role: "Head of IT & Security Operations",
     organization: "Sri Ramakrishna Engineering College",
     period: "Till 2025",
-    description: "Manages over 1500 computers, an OFC Backbone with Core Layer 3 Switching, 250+ Access Points from CISCO, SOPHOS, and Centralized CCTV Surveillance.",
-    category: "Administrative",
+    description: "Handled enterprise-scale IT and security operations covering 1500+ systems, OFC backbone, core Layer 3 switching, 250+ access points, SOPHOS security, and centralized CCTV surveillance.",
+    category: "Leadership",
     icon: <Network className="text-neon-blue" size={24} />
   },
   {
-    role: "Smart India Hackathon Coordinator",
+    role: "Cybersecurity Innovation Lead",
     organization: "Ministry of Education & SREC",
     period: "Over 5 Years",
-    description: "Coordinates the institution's participation for over 5 years. Mentored students generating innovative solutions.",
-    category: "Administrative",
+    description: "Guided innovation programs for over 5 years, mentoring teams on problem solving, secure design thinking, prototype delivery, and stakeholder presentation.",
+    category: "Leadership",
     icon: <Lightbulb className="text-matrix-green" size={24} />
   },
   {
-    role: "Research Labs Setup",
+    role: "Security Operations Builder",
     organization: "SREC Cyber Security Center",
-    period: "Administrative",
-    description: "Established research labs in Cyber Security, including Hardware Security, and AR/VR Lab.",
-    category: "Administrative",
+    period: "Leadership",
+    description: "Built cybersecurity, hardware security, and AR/VR capability centers to support applied security practice, hands-on training, and industry-aligned solutions.",
+    category: "Leadership",
     icon: <Users className="text-purple-glow" size={24} />
   },
   {
-    role: "Network Research Group Leader",
+    role: "Cybersecurity Practice Lead",
     organization: "Cyber Security Specialization",
-    period: "Administrative",
-    description: "Heads the Network Research Group and has developed nearly 10 courses for Cyber Security Specialization.",
-    category: "Administrative",
+    period: "Leadership",
+    description: "Led a focused cybersecurity practice and developed nearly 10 modules aligned with workforce needs, applied delivery, and emerging threat areas.",
+    category: "Leadership",
     icon: <Briefcase className="text-neon-blue" size={24} />
   },
   {
     role: "Research Fellowship Award 2025",
     organization: "Indian Academy of Sciences",
     period: "Jun–Jul 2025",
-    description: "Selected for the prestigious Summer Research Fellowship Programme (SFRP) 2025, focused on Industrial IoT Security at CSIR-CMERI, Durgapur.",
+    description: "Selected for the Summer Research Fellowship Programme 2025, focused on Industrial IoT security and operational technology risk at CSIR-CMERI, Durgapur.",
     category: "Engagement",
     icon: <Award className="text-matrix-green" size={24} />
   },
@@ -46,7 +46,7 @@ const experiences = [
     role: "Cybersecurity Startup Founder",
     organization: "Zyphron Technologies Pvt. Ltd.",
     period: "Current",
-    description: "Founder of a cybersecurity-focused enterprise incubated under NISP at SREC SPARK, Bengaluru. Delivers industry-aligned solutions and consultancy.",
+    description: "Founder of a cybersecurity-focused enterprise incubated under NISP at SREC SPARK, Bengaluru, delivering industry-aligned products, advisory, and consulting services.",
     category: "Engagement",
     icon: <Shield className="text-purple-glow" size={24} />
   }
@@ -64,10 +64,10 @@ export const Experience = () => {
           className="mb-16 text-center"
         >
           <h2 className="text-3xl md:text-5xl font-bold text-slate-900 mb-4">
-            Leadership & <span className="text-neon-blue glow-text">Engagements</span>
+            Leadership & <span className="text-neon-blue glow-text">Operations</span>
           </h2>
           <p className="text-slate-600 font-mono text-sm max-w-2xl mx-auto">
-            Administrative Responsibilities & Professional Engagements
+            Cybersecurity Leadership, Security Operations & Professional Engagements
           </p>
         </motion.div>
 
@@ -96,7 +96,7 @@ export const Experience = () => {
               {/* Content Card */}
               <div className="w-full pl-16 md:pl-0 md:w-5/12">
                 <div className="glass-panel neon-border p-6 rounded-xl hover:bg-black/5 transition-all">
-                  <span className={`text-xs font-mono px-3 py-1 rounded-full mb-4 inline-block ${exp.category === 'Administrative' ? 'text-neon-blue bg-neon-blue/10' : 'text-purple-glow bg-purple-glow/10'}`}>
+                  <span className={`text-xs font-mono px-3 py-1 rounded-full mb-4 inline-block ${exp.category === 'Leadership' ? 'text-neon-blue bg-neon-blue/10' : 'text-purple-glow bg-purple-glow/10'}`}>
                     {exp.period}
                   </span>
                   <h3 className="text-2xl font-bold text-slate-900 mb-2">{exp.role}</h3>

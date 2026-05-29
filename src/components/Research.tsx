@@ -45,12 +45,20 @@ export const Research = () => {
         >
           <div>
             <h2 className="text-3xl md:text-5xl font-bold text-slate-900 mb-4">
-              Research & <span className="text-purple-glow glow-text">Publications</span>
+              Research & <span className="text-purple-glow glow-text">Industry Insights</span>
             </h2>
             <p className="text-slate-600 font-mono text-sm max-w-2xl">
-              Focusing on IoT Security, Blockchain, and Advanced Routing Algorithms. Over 24 peer-reviewed journals and conference proceedings.
+              Applied work across IoT security, blockchain, wireless networks, routing intelligence, and industrial cybersecurity. Explore publications and citations through Google Scholar.
             </p>
           </div>
+          <a
+            href="https://scholar.google.com/citations?view_op=list_works&hl=en&hl=en&user=DsMW6P0AAAAJ"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center gap-2 px-5 py-3 bg-purple-glow/10 border border-purple-glow text-purple-glow font-semibold rounded hover:bg-purple-glow/20 hover:shadow-[0_0_15px_rgba(147,51,234,0.3)] transition-all shrink-0"
+          >
+            <ExternalLink size={18} /> Google Scholar
+          </a>
         </motion.div>
 
         <div className="glass-panel p-2 rounded-xl border border-slate-200 bg-slate-100/50">
@@ -102,11 +110,11 @@ export const Research = () => {
               </span>
             </div>
             <p className="text-slate-600 leading-relaxed text-sm">
-              Dr. Harihara Gopalan has actively contributed to this domain through rigorous research. This peer-reviewed publication details novel implementations and findings relevant to cyber-security and advanced networks.
+              Dr. Harihara Gopalan has contributed to applied cybersecurity, wireless networks, IoT security, and blockchain through work that connects technical depth with industry-oriented implementation and risk reduction.
             </p>
             <div className="flex gap-4 pt-4 mt-6 border-t border-slate-100">
-              <a href="#" className="flex items-center gap-2 px-4 py-2 bg-slate-100 text-slate-700 hover:bg-slate-200 rounded-lg transition-colors font-medium text-sm">
-                <ExternalLink size={18} /> View Publication Details
+              <a href="https://scholar.google.com/citations?view_op=list_works&hl=en&hl=en&user=DsMW6P0AAAAJ" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 px-4 py-2 bg-slate-100 text-slate-700 hover:bg-slate-200 rounded-lg transition-colors font-medium text-sm">
+                <ExternalLink size={18} /> Open Google Scholar
               </a>
             </div>
           </div>

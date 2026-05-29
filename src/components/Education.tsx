@@ -45,7 +45,7 @@ export const Education = () => {
         >
           <h2 className="text-3xl md:text-4xl font-bold text-slate-900 flex items-center gap-3">
             <GraduationCap className="text-neon-blue" size={40} />
-            Academic <span className="text-purple-glow glow-text">Credentials</span>
+            Professional <span className="text-purple-glow glow-text">Credentials</span>
           </h2>
         </motion.div>
 

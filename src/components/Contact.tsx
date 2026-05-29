@@ -1,47 +1,25 @@
-import { useState } from 'react';
 import { motion } from 'framer-motion';
 import { Mail, Linkedin, Github, Send } from 'lucide-react';
 
 export const Contact = () => {
-  const [name, setName] = useState('');
-  const [email, setEmail] = useState('');
-  const [message, setMessage] = useState('');
-  const [status, setStatus] = useState<'idle' | 'loading' | 'success' | 'error'>('idle');
-
-  const handleSubmit = async (e: React.FormEvent) => {
+  const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
+
+    const formData = new FormData(e.currentTarget);
+    const name = String(formData.get('name') || '').trim();
+    const email = String(formData.get('email') || '').trim();
+    const message = String(formData.get('message') || '').trim();
+
     if (!name || !email || !message) return;
 
-    setStatus('loading');
+    const subject = encodeURIComponent(`Portfolio Contact from ${name}`);
+    const body = encodeURIComponent(
+      `Name: ${name}\nEmail: ${email}\n\nMessage:\n${message}`
+    );
 
-    try {
-      const response = await fetch("https://formsubmit.co/ajax/urshari@gmail.com", {
-        method: "POST",
-        headers: {
-          'Content-Type': 'application/json',
-          'Accept': 'application/json'
-        },
-        body: JSON.stringify({
-          name: name,
-          email: email,
-          message: message,
-          _subject: `Portfolio Contact from ${name}`
-        })
-      });
-
-      if (response.ok) {
-        setStatus('success');
-        setName('');
-        setEmail('');
-        setMessage('');
-        setTimeout(() => setStatus('idle'), 5000);
-      } else {
-        setStatus('error');
-      }
-    } catch (error) {
-      setStatus('error');
-    }
+    window.location.href = `mailto:urshari@gmail.com?subject=${subject}&body=${body}`;
   };
+
   return (
     <section id="contact" className="py-24 relative overflow-hidden">
       <div className="absolute top-0 right-0 w-1/2 h-full bg-gradient-to-l from-neon-blue/5 to-transparent pointer-events-none"></div>
@@ -70,7 +48,7 @@ export const Contact = () => {
           >
             <h3 className="text-2xl font-bold text-slate-900 mb-6">Let's Secure the Future</h3>
             <p className="text-slate-600 mb-8 leading-relaxed">
-              Open to keynote speaking, startup mentoring, cybersecurity consultation, and research collaborations. Enter the secure channel to get in touch.
+              Open to cybersecurity consulting, security operations advisory, professional training, startup mentoring, and technology partnership discussions. Enter the secure channel to get in touch.
             </p>
 
             <div className="space-y-6">
@@ -123,9 +101,8 @@ export const Contact = () => {
                 <label className="block text-sm font-mono text-slate-600 mb-2">IDENTIFICATION</label>
                 <input
                   type="text"
+                  name="name"
                   placeholder="Your Name"
-                  value={name}
-                  onChange={(e) => setName(e.target.value)}
                   className="w-full bg-slate-100/50 border border-slate-200 rounded-lg px-4 py-3 text-slate-900 focus:outline-none focus:border-neon-blue/50 transition-colors"
                   required
                 />
@@ -135,9 +112,8 @@ export const Contact = () => {
                 <label className="block text-sm font-mono text-slate-600 mb-2">RETURN_ADDRESS</label>
                 <input
                   type="email"
+                  name="email"
                   placeholder="Your Email"
-                  value={email}
-                  onChange={(e) => setEmail(e.target.value)}
                   className="w-full bg-slate-100/50 border border-slate-200 rounded-lg px-4 py-3 text-slate-900 focus:outline-none focus:border-neon-blue/50 transition-colors"
                   required
                 />
@@ -147,9 +123,8 @@ export const Contact = () => {
                 <label className="block text-sm font-mono text-slate-600 mb-2">PAYLOAD</label>
                 <textarea
                   rows={4}
+                  name="message"
                   placeholder="Your Message"
-                  value={message}
-                  onChange={(e) => setMessage(e.target.value)}
                   className="w-full bg-slate-100/50 border border-slate-200 rounded-lg px-4 py-3 text-slate-900 focus:outline-none focus:border-neon-blue/50 transition-colors resize-none"
                   required
                 ></textarea>
@@ -157,33 +132,11 @@ export const Contact = () => {
 
               <button
                 type="submit"
-                disabled={status === 'loading'}
-                className="w-full flex items-center justify-center gap-2 py-4 bg-neon-blue/10 border border-neon-blue text-slate-900 font-semibold rounded-lg hover:bg-neon-blue/20 hover:shadow-[0_0_15px_rgba(0,240,255,0.4)] transition-all group disabled:opacity-50 disabled:cursor-not-allowed"
+                className="w-full flex items-center justify-center gap-2 py-4 bg-neon-blue/10 border border-neon-blue text-slate-900 font-semibold rounded-lg hover:bg-neon-blue/20 hover:shadow-[0_0_15px_rgba(0,240,255,0.4)] transition-all group"
               >
-                {status === 'loading' ? 'TRANSMITTING...' : 'TRANSMIT SECURE DATA'}
-                {!status && <Send size={18} className="group-hover:translate-x-1 transition-transform" />}
-                {status !== 'loading' && <Send size={18} className="group-hover:translate-x-1 transition-transform" />}
+                TRANSMIT SECURE DATA
+                <Send size={18} className="group-hover:translate-x-1 transition-transform" />
               </button>
-
-              {status === 'success' && (
-                <motion.div
-                  initial={{ opacity: 0, y: 10 }}
-                  animate={{ opacity: 1, y: 0 }}
-                  className="p-4 bg-green-100 border border-green-400 text-green-700 rounded-lg text-center font-mono text-sm"
-                >
-                  TRANSMISSION SUCCESSFUL. MESSAGE RECEIVED.
-                </motion.div>
-              )}
-
-              {status === 'error' && (
-                <motion.div
-                  initial={{ opacity: 0, y: 10 }}
-                  animate={{ opacity: 1, y: 0 }}
-                  className="p-4 bg-red-100 border border-red-400 text-red-700 rounded-lg text-center font-mono text-sm"
-                >
-                  TRANSMISSION FAILED. PLEASE TRY AGAIN LATER.
-                </motion.div>
-              )}
             </div>
           </motion.form>
         </div>

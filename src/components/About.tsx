@@ -6,22 +6,22 @@ export const About = () => {
     {
       icon: <Shield className="text-neon-blue mb-4" size={32} />,
       title: '18+ Years Experience',
-      description: 'Extensive background in cybersecurity, wireless networks, and IT infrastructure management.',
+      description: 'Professional experience across cybersecurity, wireless networks, and enterprise IT operations.',
     },
     {
       icon: <Shield className="text-neon-blue mb-4" size={32} />,
-      title: '18+ Years Experience',
-      description: 'Extensive background in cybersecurity, wireless networks, and IT infrastructure management.',
+      title: 'Leadership & Operations',
+      description: 'Handled large-scale infrastructure, security operations, surveillance, access control, and operational continuity.',
     },
     {
       icon: <Target className="text-neon-blue mb-4" size={32} />,
-      title: 'Cyber Security Expert',
-      description: 'Expertise in defensive and offensive operations, implementing robust security architectures.',
+      title: 'Cybersecurity Enthusiast',
+      description: 'Passionate about practical security architectures, governance, risk reduction, and emerging cyber defense practices.',
     },
     {
       icon: <Users className="text-purple-glow mb-4" size={32} />,
-      title: 'Startup Mentor',
-      description: 'Strategic mentor for the TNStartup Initiative, guiding early-stage cybersecurity startups.',
+      title: 'Founder & Advisor',
+      description: 'Supports cybersecurity startups on product direction, technical execution, and market-aligned delivery.',
     },
   ];
 
@@ -58,7 +58,7 @@ export const About = () => {
               <div className="absolute inset-0 bg-gradient-to-tr from-neon-blue/10 to-purple-glow/10 mix-blend-overlay z-10 pointer-events-none"></div>
               <img 
                 src="/profile-photo.jpg" 
-                alt="Dr. Harihara Gopalan S speaking at a podium" 
+                alt="Dr. Harihara Gopalan S professional profile photo" 
                 className="w-full h-full object-cover object-top group-hover:scale-105 transition-transform duration-700"
                 onError={(e) => {
                   (e.target as HTMLImageElement).src = 'https://placehold.co/600x600/f8fafc/0f172a?text=Please+save+image+as\\npublic/profile-photo.jpg';
@@ -69,12 +69,12 @@ export const About = () => {
             <p className="text-slate-600 leading-relaxed mb-6 font-mono text-sm">
               <span className="text-neon-blue">const</span> <span className="text-purple-glow">profile</span> = &lbrace;<br />
               &nbsp;&nbsp;name: <span className="text-emerald-500">"Dr. Harihara Gopalan S"</span>,<br />
-              &nbsp;&nbsp;role: <span className="text-emerald-500">"Cyber Security Specialist"</span>,<br />
+              &nbsp;&nbsp;role: <span className="text-emerald-500">"Cybersecurity Professional & Operations Lead"</span>,<br />
               &nbsp;&nbsp;status: <span className="text-emerald-500">"Active"</span><br />
               &rbrace;;
             </p>
             <p className="text-slate-600 leading-relaxed">
-              A seasoned professional with over 18 years of expertise specializing in Cyber Security and Wireless Networks. With several industry-recognized certifications including CEH, CISO, and Certified Blockchain Associate, I focus on advanced research, innovation, and strategic security architectures. Instrumental in designing sophisticated cybersecurity frameworks and fostering industry collaboration to secure next-generation technologies.
+              A professional cybersecurity enthusiast with over 18 years of experience in cybersecurity, wireless networks, IT infrastructure, and enterprise operations. With credentials including CCISO, CEH, and Certified Blockchain Associate, I focus on security operations, governance, risk-aware implementation, consulting, and innovation-led delivery for secure digital ecosystems.
             </p>
           </motion.div>
 
