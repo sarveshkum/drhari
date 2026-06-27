@@ -1,54 +1,23 @@
 import { motion } from 'framer-motion';
-import { Briefcase, Network, Lightbulb, Users, Award, Shield } from 'lucide-react';
+import { Briefcase, ExternalLink, Users } from 'lucide-react';
 
 const experiences = [
   {
-    role: "Head of IT & Security Operations",
-    organization: "Sri Ramakrishna Engineering College",
-    period: "Till 2025",
-    description: "Handled enterprise-scale IT and security operations covering 1500+ systems, OFC backbone, core Layer 3 switching, 250+ access points, SOPHOS security, and centralized CCTV surveillance.",
-    category: "Leadership",
-    icon: <Network className="text-neon-blue" size={24} />
-  },
-  {
-    role: "Cybersecurity Innovation Lead",
-    organization: "Ministry of Education & SREC",
-    period: "Over 5 Years",
-    description: "Guided innovation programs for over 5 years, mentoring teams on problem solving, secure design thinking, prototype delivery, and stakeholder presentation.",
-    category: "Leadership",
-    icon: <Lightbulb className="text-matrix-green" size={24} />
-  },
-  {
-    role: "Security Operations Builder",
-    organization: "SREC Cyber Security Center",
-    period: "Leadership",
-    description: "Built cybersecurity, hardware security, and AR/VR capability centers to support applied security practice, hands-on training, and industry-aligned solutions.",
-    category: "Leadership",
-    icon: <Users className="text-purple-glow" size={24} />
-  },
-  {
-    role: "Cybersecurity Practice Lead",
-    organization: "Cyber Security Specialization",
-    period: "Leadership",
-    description: "Led a focused cybersecurity practice and developed nearly 10 modules aligned with workforce needs, applied delivery, and emerging threat areas.",
+    role: "Senior Manager",
+    organization: "Techguard Labs Foundation",
+    period: "Present",
+    description: "Leading cybersecurity operations, professional programs, security consulting, and industry-focused technology initiatives.",
+    website: "https://www.techguardlabs.com/",
     category: "Leadership",
     icon: <Briefcase className="text-neon-blue" size={24} />
   },
   {
-    role: "Research Fellowship Award 2025",
-    organization: "Indian Academy of Sciences",
-    period: "Jun–Jul 2025",
-    description: "Selected for the Summer Research Fellowship Programme 2025, focused on Industrial IoT security and operational technology risk at CSIR-CMERI, Durgapur.",
-    category: "Engagement",
-    icon: <Award className="text-matrix-green" size={24} />
-  },
-  {
-    role: "Cybersecurity Startup Founder",
-    organization: "Zyphron Technologies Pvt. Ltd.",
-    period: "Current",
-    description: "Founder of a cybersecurity-focused enterprise incubated under NISP at SREC SPARK, Bengaluru, delivering industry-aligned products, advisory, and consulting services.",
-    category: "Engagement",
-    icon: <Shield className="text-purple-glow" size={24} />
+    role: "Professor",
+    organization: "Sri Ramakrishna Engineering College",
+    period: "2008 - 2016",
+    description: "Served as Professor at SREC with a focus on computer science, networks, cybersecurity learning, and professional student development.",
+    category: "Leadership",
+    icon: <Users className="text-purple-glow" size={24} />
   }
 ];
 
@@ -104,6 +73,16 @@ export const Experience = () => {
                   <p className="text-slate-600 text-sm leading-relaxed">
                     {exp.description}
                   </p>
+                  {'website' in exp && exp.website && (
+                    <a
+                      href={exp.website}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="inline-flex items-center gap-2 mt-5 px-4 py-2 bg-neon-blue/10 border border-neon-blue text-neon-blue rounded-lg hover:bg-neon-blue/20 transition-colors font-semibold text-sm"
+                    >
+                      Company Website <ExternalLink size={16} />
+                    </a>
+                  )}
                 </div>
               </div>
             </motion.div>

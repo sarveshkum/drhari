@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="150" height="96" viewBox="0 0 150 96" role="img" aria-label="Cybersecurity Career Mentor">
+  <path d="M75 5 135 25v34c0 21-15 33-60 42C30 92 15 80 15 59V25z" fill="#111827" stroke="#E11D28" stroke-width="6"/>
+  <text x="75" y="31" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="800" fill="#fff">CYBERSECURITY</text>
+  <text x="75" y="50" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="20" font-weight="900" fill="#fff">CAREER</text>
+  <text x="75" y="70" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="20" font-weight="900" fill="#fff">MENTOR</text>
+</svg>

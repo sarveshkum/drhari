@@ -2,6 +2,35 @@ import { motion } from 'framer-motion';
 import { TypeAnimation } from 'react-type-animation';
 import { ChevronRight } from 'lucide-react';
 
+const profileBadges = [
+  { image: '/badges/facebook.svg', title: 'Facebook', href: 'https://www.facebook.com/harisuryanarayanan' },
+  { image: '/badges/linkedin.svg', title: 'LinkedIn', href: 'https://www.linkedin.com/in/harisuryanarayanan/' },
+  { image: '/badges/orcid.svg', title: 'ORCID', href: 'https://orcid.org/0000-0003-0830-9742' },
+  { image: '/badges/web-of-science.svg', title: 'Web of Science', href: 'https://www.webofscience.com/wos/author/record/AAJ-9817-2021' },
+  { image: '/badges/scopus.svg', title: 'Scopus', href: 'https://www.scopus.com/authid/detail.uri?authorId=57194520134' },
+  { image: '/badges/sciprofiles.svg', title: 'SciProfiles', href: 'https://sciprofiles.com/profile/1579844' },
+  { image: '/badges/google-scholar.svg', title: 'Google Scholar', href: 'https://scholar.google.com/citations?user=DsMW6P0AAAAJ&hl=en' },
+];
+
+const certificationBadges = [
+  {
+    title: 'Certified Ethical Hacker',
+    href: 'https://aspen.eccouncil.org/VerifyBadge?type=certification&a=8pn0vFdle07YbNJY0FAjNfK0UV98ncfHwyzLA8jZTDY=',
+    image: '/badges/ceh-badge.png',
+  },
+  {
+    title: 'Certified Chief Information Security Officer',
+    href: 'https://www.linkedin.com/in/harisuryanarayanan/details/certifications/',
+    image: '/badges/cciso.svg',
+    wide: true,
+  },
+  {
+    title: 'Cybersecurity Career Mentor',
+    href: 'https://aspen.eccouncil.org/VerifyBadge?type=mentor&a=8pn0vFdle07YbNJY0FAjNfK0UV98ncfHwyzLA8jZTDY=',
+    image: '/badges/career-mentor-badge.png',
+  },
+];
+
 export const Hero = () => {
   return (
     <section className="relative min-h-screen flex items-center justify-center pt-20 overflow-hidden">
@@ -33,19 +62,51 @@ export const Hero = () => {
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.5, delay: 0.15 }}
+            className="flex flex-wrap items-center gap-3"
+          >
+            <div className="flex flex-wrap items-center gap-2">
+              {profileBadges.map((badge) => (
+                <a
+                  key={badge.title}
+                  href={badge.href}
+                  title={badge.title}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="block h-8 w-8 rounded-md shadow-sm hover:-translate-y-1 transition-transform"
+                >
+                  <img src={badge.image} alt={badge.title} className="h-full w-full object-contain" />
+                </a>
+              ))}
+            </div>
+            {certificationBadges.map((badge) => (
+              <a
+                key={badge.title}
+                href={badge.href}
+                title={badge.title}
+                target="_blank"
+                rel="noopener noreferrer"
+                className={`block h-20 ${badge.wide ? 'w-40 sm:w-48' : 'w-20 sm:w-24'} sm:h-24 rounded-lg shadow-md hover:-translate-y-1 transition-transform`}
+              >
+                <img src={badge.image} alt={badge.title} className="h-full w-full object-contain" />
+              </a>
+            ))}
+          </motion.div>
+
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: 0.2 }}
             className="text-2xl md:text-4xl font-semibold text-black h-[80px] md:h-auto"
           >
             <span className="mr-3 text-black">&gt;</span>
             <TypeAnimation
               sequence={[
-                'Cybersecurity Professional',
+                'Cyber Security Consultant',
                 2000,
-                'Security Operations Enthusiast',
+                'Senior Manager',
                 2000,
-                'Founder, Zyphron Technologies',
-                2000,
-                'IT & Network Operations Lead',
+                'Security Operations Consultant',
                 2000,
 
               ]}

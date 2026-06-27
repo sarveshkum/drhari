@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="240" height="100" viewBox="0 0 240 100" role="img" aria-label="Certified Chief Information Security Officer">
+  <rect width="240" height="100" rx="4" fill="#050505"/>
+  <line x1="69" y1="7" x2="69" y2="92" stroke="#E11D28" stroke-width="3"/>
+  <text x="24" y="59" font-family="Arial, Helvetica, sans-serif" font-size="50" font-weight="900" fill="#ffffff">C</text>
+  <text x="73" y="59" font-family="Arial, Helvetica, sans-serif" font-size="50" font-weight="900" fill="#ffffff">CISO</text>
+  <text x="25" y="78" font-family="Arial, Helvetica, sans-serif" font-size="9" font-weight="700" fill="#ffffff">Certified</text>
+  <text x="78" y="78" font-family="Arial, Helvetica, sans-serif" font-size="9" font-weight="700" fill="#ffffff">Chief Information Security Officer</text>
+  <circle cx="203" cy="16" r="2" fill="#ffffff" opacity=".55"/>
+</svg>
